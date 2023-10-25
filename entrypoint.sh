@@ -103,7 +103,7 @@ kedro_lint(){
 kedro_run (){
     if [ $INPUT_SHOULD_RUN ]; then
         print_step "kedro run"
-        kedro run
+        # kedro run
     fi
 }
 
@@ -119,15 +119,15 @@ kedro_test(){
 kedro_build_docs(){
     if [ $INPUT_SHOULD_BUILD_DOCS ]; then
         print_step "kedro build-docs"
-        kedro build-docs
-	mv docs/build/html ~/kedro-action/docs
+        #kedro build-docs
+	#mv docs/build/html ~/kedro-action/docs
     fi
 }
 
 kedro_package(){
     if [ $INPUT_SHOULD_PACKAGE ]; then
         print_step "kedro package"
-        kedro package
+        # kedro package
     fi
 }
 
