@@ -85,12 +85,12 @@ install_python_version(){
 install_kedro(){
     print_step "Install kedro library"
     python -m pip install --upgrade pip
-    pip install kedro  
+    pip install kedro==0.18.7
 }
 
 install_project(){
     print_step "Install kedro project"
-    kedro install
+    # kedro install
 }
 
 kedro_lint(){
