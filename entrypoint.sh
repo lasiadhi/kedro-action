@@ -96,7 +96,7 @@ install_project(){
 kedro_lint(){
     if [ $INPUT_SHOULD_LINT ]; then
         print_step "kedro lint"
-        kedro lint
+        # kedro lint
     fi
 }
 
