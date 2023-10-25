@@ -64,7 +64,7 @@ push_to_branch() {
 
         echo 🏃 Deploying ${build_dir} directory to ${target_branch} branch on ${repo} repo
         
-        if [ $keep_history == false]
+        if [ $keep_history == false ]
         then
         git push --quiet ${REMOTE} ${target_branch}
         else
